@@ -1,0 +1,29 @@
+<div class="panel-heading">
+  <strong>路由信息查询</strong>
+</div>
+<div class="panel-body">
+   <table class="table table-condensed">
+    <tr class="success">
+      <th>ID</th>
+      <th>会话时间</th>
+      <th>远程地址</th>
+      <th>代理地址</th>
+      <th>路由地址</th>
+      <th>服务地址</th>
+    </tr>
+    <tbody>{#1}</tbody>
+   <tr class='success'>
+     <td colspan='4'>
+       <ul class="pagination pagination-sm" style="margin:0px;">
+          <li class="disabled"><a href='#'>总计:{#2}</a></li>
+		  {#4}
+          <li><a href='#'>>></a></li>
+          <li class="disabled"><a href='#'>每页:{#3}</a></li>
+	  </ul>
+     </td>
+     <td colspan='2' align="center">
+       {#5}
+     </td>
+   </tr>
+   </table>
+ </div>

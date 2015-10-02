@@ -1,0 +1,19 @@
+ol, ul {
+  list-style: none;
+  margin: 0;
+}
+hr {
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  border-style: inset;
+  border-width: 1px;
+  display: block;
+}
+.content {
+  margin-top:0px;
+  min-height: 550px;
+  background-color: white;
+  border: 2px solid #d9dadc;
+}

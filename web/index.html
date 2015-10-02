@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ngx-LB</title>
+<!--
+[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]
+-->
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="/css/my.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color: #222;">
+	<div class="container" id="main_div" style="margin-top:0px;display:none;">
+	     <div class="jumbotron">
+            <h1>欢迎使用NginxLB</h1>
+      		<hr>
+      		<p>NginxLB是具备动态伸缩的服务接入软件,支持以下特性</p>
+        	<ul>
+				<li><h4>1.服务负载均衡</h4>
+					<ul>
+						<li><h5>a.基于hash的负载均衡[可配置权重]</h5></li>
+						<li><h5>b.基于轮询的负载均衡[可配置权重]</h5></li>
+					</ul></li>
+				<li><h4>2.路由链路管理</h4>
+					<ul>
+						<li><h5>a.客户端路由信息跟踪</h5></li>
+						<li><h5>b.主机路由信息统计</h5></li>
+						<li><h5>c.断开异常的客户端连接</h5></li>
+					</ul></li>
+				<li><h4>3.主机动态上下线</h4>
+					<ul>
+						<li><h5>a.动态上线主机</h5></li>
+						<li><h5>b.动态下线或移除主机</h5>
+							<ul>
+								<li><h5>1.立即下线或移除[紧急模式]</h5></li>
+								<li><h5>2.完成当前事务后下线或移除[安全模式]</h5></li>
+							</ul></li>
+					</ul></li>
+				</ul>
+		   <div class="panel panel-primary">
+			  <div class="panel-footer">
+				  <a class="btn btn-primary btn-lg" href="http://htmlsocket.sinaapp.com/">访问官网</a>
+				  <a class="btn btn-primary btn-lg" href="/admin/lbquery">负载管理</a>	
+				  <a class="btn btn-primary btn-lg" href="/admin/route">路由管理</a>
+			  </div>
+		   </div>
+		    <strong>version:1.0.0 buid in 2015/9/19</strong>
+		    <strong>Q群:476304362</strong>
+		    <strong>MyCat:106088787</strong>
+       </div>
+	</div>
+</body>
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+   $("#main_div").slideDown("slow");
+</script>
+</html>

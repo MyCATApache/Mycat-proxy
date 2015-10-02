@@ -1,0 +1,45 @@
+<div class="panel-heading">
+  <strong>服务主机管理</strong>
+  <label class="label label-default">
+            注意:添加不检测主机连通性 下线后不接受新连接,但会继续处理当前连接
+  </label>
+</div>
+<div class="panel-body">
+<table class="table table-striped">
+        <thead>
+            <tr class="success">
+                <th>主机</th>
+                <th>端口</th>
+                <th>权重</th>
+                <th>状态</th>
+                <th>管理</th>
+            </tr>
+        </thead>
+        <tbody id="host_table">{#1}</tbody>
+        <tfoot>
+            <tr class="danger">
+                <td><input type="text" id="host"></td>
+                <td><input type="text" id="port"></td>
+                <td><input type="text" id="weight"></td>
+                <td colspan="2">
+                   <input type="button" id="addbtn" value="添加并上线">
+                </td>
+            </tr>
+            <tr class="success">
+              <td colspan="5">
+                                            负载均衡策略:
+                  <input name="lb_type" type="radio" {#2} />Hash模式
+                  <input name="lb_type" type="radio" {#3} />轮询模式 
+                                         代理端口:
+                  <input id="lb_port" type="text" size="3" value="{#4}" />
+                  <input id="lb_save" type="button" value="保存" />
+                  <input id="lb_stop" type="button" value="停止服务" />                           
+              </td>   
+            </tr>
+            <tr>
+              <th colspan="5">
+                  <label class="label label-danger" id="err_info"></label>    
+              </th>
+             </tr>
+        </tfoot>
+</table>
