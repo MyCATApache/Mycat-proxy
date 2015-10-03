@@ -1,1 +1,1 @@
-# Mycat-proxy
+move to https://github.com/coderczp/MycatLB
